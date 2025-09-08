@@ -4,6 +4,8 @@ on:
     # Runs every hour
     - cron: '0 * * * *'
   workflow_dispatch: # allows you to run the workflow manually
+permissions:
+  contents: write
 jobs:
   update-readme-with-blog:
     name: Update this repo's README with latest blog posts
